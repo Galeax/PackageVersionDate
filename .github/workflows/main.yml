@@ -3,14 +3,11 @@ name: Update Versions
 on:
   schedule:
     - cron: '0 1 * * *'  # Adjust the cron schedule as needed
-  workflow_dispatch:      # Add this line to enable manual triggering
+  workflow_dispatch:      # Enables manual triggering
 
 jobs:
   update_versions:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: write  # Ensure the workflow has write permissions
 
     steps:
       # Check out the repository
@@ -43,8 +40,8 @@ jobs:
       # Configure Git
       - name: Configure Git
         run: |
-          git config user.email "your-bot-email@example.com"
-          git config user.name "your-bot-username"
+          git config user.name "bot"
+          git config user.email "bot@bot.com"
 
       # Add modified files
       - name: Add modified files
@@ -57,8 +54,8 @@ jobs:
           PAT_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
           if ! git diff --cached --quiet; then
-            git commit --author="your-bot-username <your-bot-email@example.com>" -m "Update versions [skip ci]"
-            git push https://your-bot-username:${PAT_TOKEN}@github.com/your-username/your-repository.git HEAD:first_draft
+            git commit -m "Update versions [skip ci]"
+            git push https://AmineHazi:${PAT_TOKEN}@github.com/Galeax/PackageVersionDate.git HEAD:test_branch
           else
             echo "No changes to commit."
           fi
