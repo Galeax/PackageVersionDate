@@ -2,14 +2,15 @@ name: Update Versions
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Run every 5 minutes
+    - cron: '0 1 * * *'  # Adjust the cron schedule as needed
+  workflow_dispatch:      # Add this line to enable manual triggering
 
 jobs:
   update_versions:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: write  
+      contents: write  # Ensure the workflow has write permissions
 
     steps:
       # Check out the repository
@@ -42,8 +43,8 @@ jobs:
       # Configure Git
       - name: Configure Git
         run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
+          git config user.email "your-bot-email@example.com"
+          git config user.name "your-bot-username"
 
       # Add modified files
       - name: Add modified files
@@ -53,11 +54,11 @@ jobs:
       # Commit and push changes if there are any
       - name: Commit and push changes
         env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          PAT_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
           if ! git diff --cached --quiet; then
-            git commit -m "Update versions [skip ci]"
-            git push origin HEAD:first_draft
+            git commit --author="your-bot-username <your-bot-email@example.com>" -m "Update versions [skip ci]"
+            git push https://your-bot-username:${PAT_TOKEN}@github.com/your-username/your-repository.git HEAD:first_draft
           else
             echo "No changes to commit."
           fi
