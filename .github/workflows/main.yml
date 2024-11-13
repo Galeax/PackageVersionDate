@@ -1,0 +1,63 @@
+name: Update Versions
+
+on:
+  schedule:
+    - cron: '0 1 * * *'  # Run everyday at 1 am
+
+jobs:
+  update_versions:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write  
+
+    steps:
+      # Check out the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Fetch all history for accurate git operations
+
+      # Set up Python 3.9
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      # Install dependencies
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4
+
+      # Run the version update scripts
+      - name: Run Firefox version script
+        run: python firefox/get_firefox_versions.py
+
+      - name: Run Chrome version script
+        run: python chrome/get_chrome_versions.py
+
+      - name: Run Windows version script
+        run: python windows/get_windows_versions.py
+
+      # Configure Git
+      - name: Configure Git
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+      # Add modified files
+      - name: Add modified files
+        run: |
+          git add firefox/versions/ chrome/versions/ windows/versions/
+
+      # Commit and push changes if there are any
+      - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if ! git diff --cached --quiet; then
+            git commit -m "Update versions [skip ci]"
+            git push origin HEAD:first_draft
+          else
+            echo "No changes to commit."
+          fi
