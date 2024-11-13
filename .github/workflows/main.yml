@@ -55,7 +55,7 @@ jobs:
         run: |
           if ! git diff --cached --quiet; then
             git commit -m "Update versions [skip ci]"
-            git push https://AmineHazi:${PAT_TOKEN}@github.com/Galeax/PackageVersionDate.git HEAD:test_branch
+            git push https://AmineHazi:${PAT_TOKEN}@github.com/Galeax/PackageVersionDate.git HEAD:main
           else
             echo "No changes to commit."
           fi
