@@ -82,12 +82,12 @@ def extract_updates_from_table(version_name, table):
             kb_text = kb_link.get_text(strip=True)
         else:
             kb_text = kb_cell.get_text(strip=True)
-        # Déterminer la date de fin de vie (date de sortie de la mise à jour suivante)
+        # Déterminer la date de fin de vie (date de sortie de la mise à jour précédente)
         eol_text = None
-        if i + 1 < len(rows[1:]):
-            next_row = rows[i + 2]
-            next_date_cell = next_row.find_all('td')[header_indices['date']]
-            eol_text = next_date_cell.get_text(strip=True)
+        if i > 0:
+            prev_row = rows[i]
+            prev_date_cell = prev_row.find_all('td')[header_indices['date']]
+            eol_text = prev_date_cell.get_text(strip=True)
         # Ajouter à la liste des mises à jour
         updates.append({
             'date': date_text,
