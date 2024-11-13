@@ -28,6 +28,7 @@ def fetch_releases(platform, channels):
             version = release.get('version')
             serving = release.get('serving', {})
             start_time = serving.get('startTime')
+            end_time = serving.get('endTime')
             if version and start_time:
                 try:
                     date_obj = datetime.strptime(start_time, '%Y-%m-%dT%H:%M:%S.%fZ')
@@ -40,6 +41,7 @@ def fetch_releases(platform, channels):
                 releases.append({
                     'version': version,
                     'published': date_obj,
+                    'eol': end_time,
                     'channel': channel
                 })
 
@@ -68,17 +70,6 @@ def main():
     # Convertir toutes les dates 'published' en chaînes de caractères
     for release in releases:
         release['published'] = release['published'].strftime('%Y-%m-%d')
-
-    # Définir la date de fin de vie (EOL) comme la date de publication de la version suivante
-    for i in range(len(releases)):
-        release = releases[i]
-        if i < len(releases) - 1:
-            eol_date = releases[i + 1]['published']
-        else:
-            eol_date = None  # Dernière version, date de fin de vie inconnue
-        release['eol'] = eol_date
-        # Supprimer 'channel' si vous n'en avez pas besoin dans la sortie
-        release.pop('channel', None)
         
     # Créer le répertoire si nécessaire
     output_dir = 'chrome/versions'
