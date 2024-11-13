@@ -37,6 +37,12 @@ jobs:
       - name: Run Windows version script
         run: python windows/get_windows_versions.py
 
+      # Configure Git
+      - name: Configure Git
+        run: |
+          git config user.name "AmineHazi"
+          git config user.email "aminehazi03@gmail.com"
+
       # Add modified files
       - name: Add modified files
         run: |
