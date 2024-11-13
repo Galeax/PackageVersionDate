@@ -2,7 +2,7 @@ name: Update Versions
 
 on:
   schedule:
-    - cron: '0 1 * * *'  # Adjust the cron schedule as needed
+    - cron: '*/5 * * * *'  # Run every five minutes
   workflow_dispatch:      # Enables manual triggering
 
 jobs:
