@@ -3474,6 +3474,12 @@
     "channel": "stable"
   },
   {
+    "version": "131.0.6778.70",
+    "published": "2024-11-12",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
     "version": "130.0.6723.119",
     "published": "2024-11-12",
     "eol": "2024-11-15T00:52:31.564964Z",
@@ -3483,12 +3489,6 @@
     "version": "131.0.6778.69",
     "published": "2024-11-12",
     "eol": "2024-11-15T00:52:31.564964Z",
-    "channel": "stable"
-  },
-  {
-    "version": "131.0.6778.70",
-    "published": "2024-11-12",
-    "eol": null,
     "channel": "stable"
   },
   {
