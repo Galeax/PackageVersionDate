@@ -3500,13 +3500,13 @@
   {
     "version": "131.0.6778.71",
     "published": "2024-11-19",
-    "eol": null,
+    "eol": "2024-11-20T22:29:22.088123Z",
     "channel": "stable"
   },
   {
     "version": "131.0.6778.85",
     "published": "2024-11-19",
-    "eol": null,
+    "eol": "2024-11-20T22:29:22.088123Z",
     "channel": "stable"
   },
   {
@@ -3514,5 +3514,11 @@
     "published": "2024-11-19",
     "eol": null,
     "channel": "stable"
+  },
+  {
+    "version": "130.0.6723.137",
+    "published": "2024-11-20",
+    "eol": null,
+    "channel": "extended"
   }
 ]
