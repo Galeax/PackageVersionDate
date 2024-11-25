@@ -4,6 +4,7 @@ import json
 import re
 import time
 import os
+from datetime import datetime, timedelta
 
 def fetch_release_information(url):
     """
@@ -93,9 +94,32 @@ def extract_updates_from_table(version_name, table):
             'date': date_text,
             'build': build_text,
             'KB': kb_text,
-            'eol': eol_text
+            'eol': eol_text,
+            'is_preview': is_second_tuesday(datetime.strptime(date_text, '%Y-%m-%d')) == False
         })
     return updates
+
+def is_second_tuesday(date):
+    """
+    Vérifie si la date fournie est un deuxième mardi du mois.
+    Permet de valider qu'une KB est une mise à jour mensuelle, et pas une preview.
+
+    Args:
+        date (datetime): Objet datetime correspondant à la date à vérifier.
+
+    Returns:
+        bool: Vrai si la date est un deuxième mardi, False sinon.
+    """
+    # Premier jour du mois pour la date donnée
+    first_day_of_month = date.replace(day=1)
+
+    # Trouver le premier mardi du mois
+    # 0 = lundi, 1 = mardi, comme crontab...
+    days_to_first_tuesday = (1 - first_day_of_month.weekday()) % 7
+    first_tuesday = first_day_of_month + timedelta(days=days_to_first_tuesday)
+
+    second_tuesday = first_tuesday + timedelta(weeks=1)
+    return date == second_tuesday
 
 def main():
     windows_versions = {
