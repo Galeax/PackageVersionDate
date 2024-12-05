@@ -4,6 +4,7 @@ import json
 import re
 import time
 import os
+from datetime import datetime, timedelta
 
 def fetch_release_information(url):
     """
@@ -38,6 +39,13 @@ def extract_update_tables(soup):
                 print(version_name)
                 update_tables.append((version_name, table))
     return update_tables
+
+def is_second_tuesday(date_str):
+    """
+    Vérifie si une date donnée est le deuxième mardi du mois.
+    """
+    date_obj = datetime.strptime(date_str, '%Y-%m-%d')
+    return date_obj.weekday() == 1 and 8 <= date_obj.day <= 14
 
 def extract_updates_from_table(version_name, table):
     """
@@ -76,18 +84,21 @@ def extract_updates_from_table(version_name, table):
         kb_cell = cells[header_indices['kb']]
         # Extraire le texte et nettoyer
         date_text = date_cell.get_text(strip=True)
+        if not is_second_tuesday(date_text):
+            continue
         build_text = build_cell.get_text(strip=True)
         kb_link = kb_cell.find('a', href=True)
         if kb_link:
             kb_text = kb_link.get_text(strip=True)
         else:
             kb_text = kb_cell.get_text(strip=True)
-        # Déterminer la date de fin de vie (date de sortie de la mise à jour précédente)
-        eol_text = None
-        if i > 0:
-            prev_row = rows[i]
-            prev_date_cell = prev_row.find_all('td')[header_indices['date']]
-            eol_text = prev_date_cell.get_text(strip=True)
+        # Déterminer la date de fin de vie (deuxième mardi du mois suivant)
+        date_obj = datetime.strptime(date_text, '%Y-%m-%d')
+        next_month = date_obj.replace(day=28) + timedelta(days=4)  # aller au mois suivant
+        next_month = next_month.replace(day=1)  # aller au début du mois suivant
+        while next_month.weekday() != 1 or next_month.day < 8:
+            next_month += timedelta(days=1)
+        eol_text = next_month.strftime('%Y-%m-%d')
         # Ajouter à la liste des mises à jour
         updates.append({
             'date': date_text,
