@@ -5,25 +5,28 @@ import os
 
 def main():
     try:
-        # Récupérer les données de version depuis l'URL spécifiée
+        # Fetch version data from the specified URL
         url = "https://product-details.mozilla.org/1.0/firefox.json"
         response = requests.get(url)
         response.raise_for_status()  # Raise an HTTPError for bad responses
         data = response.json()
     except requests.RequestException as e:
-        print(f"Erreur lors de la récupération des données: {e}")
+        print(f"Error fetching data: {e}")
         return
     except json.JSONDecodeError as e:
-        print(f"Erreur lors du décodage JSON: {e}")
+        print(f"Error decoding JSON: {e}")
         return
 
-    # Extraire le dictionnaire 'releases'
+    # Extract the 'releases' dictionary
     releases_data = data.get('releases', {})
 
     releases = []
+    major_releases = []
 
-    # Traiter chaque version
+    # Process each version
     for release_key, details in releases_data.items():
+        if 'esr' in release_key:
+            continue
         category = details.get('category')
         if category in ['major', 'stability']:
             version = details.get('version')
@@ -32,40 +35,59 @@ def main():
                 try:
                     date_obj = datetime.strptime(published, '%Y-%m-%d')
                 except ValueError:
-                    print(f"Format de date invalide pour la version {version}: {published}")
-                    continue  # Ignorer si le format de la date est invalide
+                    print(f"Invalid date format for version {version}: {published}")
+                    continue  # Skip if date format is invalid
 
-                releases.append({
+                release_info = {
                     'version': version,
                     'published': published,
-                    'date_obj': date_obj
-                })
+                    'date_obj': date_obj,
+                    'category': category  # Keep track of the category
+                }
 
-    # Trier les versions par date de publication
+                releases.append(release_info)
+
+                # Collect major releases separately
+                if category == 'major':
+                    major_releases.append(release_info)
+
+    # Sort the releases by publication date
     releases.sort(key=lambda x: x['date_obj'])
+    major_releases.sort(key=lambda x: x['date_obj'])
 
-    # Définir la date de fin de vie (EOL) comme la date de publication de la version suivante
-    for i in range(len(releases)):
-        if i < len(releases) - 1:
-            eol_date = releases[i + 1]['published']
+    # For each major release, find the next major release date for EOL
+    for release in releases:
+        if release['category'] == 'major':
+            release_date = release['date_obj']
+
+            # Find the next major release after the current release
+            next_major_release_date = None
+            for major_release in major_releases:
+                if major_release['date_obj'] > release_date:
+                    next_major_release_date = major_release['published']
+                    break
+
+            release['eol'] = next_major_release_date  # Could be None if no next major release
         else:
-            eol_date = None  # Dernière version, date de fin de vie inconnue
-        releases[i]['eol'] = eol_date
+            release['eol'] = None  # Non-major releases do not have EOL dates
 
-    # Supprimer 'date_obj' car il n'est plus nécessaire
+        release['eol'] = next_major_release_date  # Could be None if no next major release
+
+    # Remove 'date_obj' and 'category' as they're no longer needed
     for release in releases:
         release.pop('date_obj')
+        release.pop('category')
 
     try:
-        # Créer le répertoire si nécessaire
+        # Create the directory if it doesn't exist
         os.makedirs('firefox/versions', exist_ok=True)
         
-        # Exporter les données dans un fichier JSON
+        # Export the data to a JSON file
         with open('firefox/versions/firefox_versions.json', 'w') as f:
             json.dump(releases, f, indent=2)
-        print("firefox_versions.json a été généré avec succès.")
+        print("firefox_versions.json has been successfully generated.")
     except IOError as e:
-        print(f"Erreur lors de l'écriture du fichier JSON: {e}")
+        print(f"Error writing JSON file: {e}")
 
 if __name__ == "__main__":
     main()
