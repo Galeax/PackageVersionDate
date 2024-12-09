@@ -40,12 +40,23 @@ def extract_update_tables(soup):
                 update_tables.append((version_name, table))
     return update_tables
 
-def is_second_tuesday(date_str):
+def is_second_tuesday(date):
     """
-    Vérifie si une date donnée est le deuxième mardi du mois.
+    Vérifie si la date fournie est un deuxième mardi du mois.
+    Permet de valider qu'une KB est une mise à jour mensuelle, et pas une preview.
+    Args:
+        date (datetime): Objet datetime correspondant à la date à vérifier.
+    Returns:
+        bool: Vrai si la date est un deuxième mardi, False sinon.
     """
-    date_obj = datetime.strptime(date_str, '%Y-%m-%d')
-    return date_obj.weekday() == 1 and 8 <= date_obj.day <= 14
+    # Premier jour du mois pour la date donnée
+    first_day_of_month = date.replace(day=1)
+    # Trouver le premier mardi du mois
+    # 0 = lundi, 1 = mardi, comme crontab...
+    days_to_first_tuesday = (1 - first_day_of_month.weekday()) % 7
+    first_tuesday = first_day_of_month + timedelta(days=days_to_first_tuesday)
+    second_tuesday = first_tuesday + timedelta(weeks=1)
+    return date == second_tuesday
 
 def extract_updates_from_table(version_name, table):
     """
@@ -84,8 +95,6 @@ def extract_updates_from_table(version_name, table):
         kb_cell = cells[header_indices['kb']]
         # Extraire le texte et nettoyer
         date_text = date_cell.get_text(strip=True)
-        if not is_second_tuesday(date_text):
-            continue
         build_text = build_cell.get_text(strip=True)
         kb_link = kb_cell.find('a', href=True)
         if kb_link:
@@ -104,7 +113,8 @@ def extract_updates_from_table(version_name, table):
             'date': date_text,
             'build': build_text,
             'KB': kb_text,
-            'eol': eol_text
+            'eol': eol_text,
+            'is_preview': is_second_tuesday(datetime.strptime(date_text, '%Y-%m-%d')) == False
         })
     return updates
 
