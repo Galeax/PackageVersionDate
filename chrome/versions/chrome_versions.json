@@ -3530,7 +3530,7 @@
   {
     "version": "131.0.6778.109",
     "published": "2024-12-03",
-    "eol": null,
+    "eol": "2024-12-10T21:51:20.716745Z",
     "channel": "stable"
   },
   {
@@ -3544,5 +3544,29 @@
     "published": "2024-12-03",
     "eol": "2024-12-04T23:13:36.908763Z",
     "channel": "stable"
+  },
+  {
+    "version": "131.0.6778.110",
+    "published": "2024-12-10",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "131.0.6778.139",
+    "published": "2024-12-10",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "131.0.6778.140",
+    "published": "2024-12-10",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "130.0.6723.160",
+    "published": "2024-12-10",
+    "eol": null,
+    "channel": "extended"
   }
 ]
