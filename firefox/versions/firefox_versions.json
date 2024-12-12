@@ -2423,5 +2423,10 @@
     "version": "133.0",
     "published": "2024-11-26",
     "eol": null
+  },
+  {
+    "version": "133.0.3",
+    "published": "2024-12-10",
+    "eol": null
   }
 ]
