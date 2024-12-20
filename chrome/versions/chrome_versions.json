@@ -3570,27 +3570,27 @@
     "channel": "extended"
   },
   {
-    "version": "131.0.6778.141",
-    "published": "2024-12-18",
-    "eol": null,
-    "channel": "stable"
-  },
-  {
-    "version": "131.0.6778.204",
-    "published": "2024-12-18",
-    "eol": null,
-    "channel": "stable"
-  },
-  {
     "version": "131.0.6778.205",
     "published": "2024-12-18",
     "eol": null,
     "channel": "stable"
   },
   {
+    "version": "131.0.6778.141",
+    "published": "2024-12-18",
+    "eol": "2024-12-19T19:42:15.712008Z",
+    "channel": "stable"
+  },
+  {
+    "version": "131.0.6778.204",
+    "published": "2024-12-18",
+    "eol": "2024-12-19T19:42:15.712008Z",
+    "channel": "stable"
+  },
+  {
     "version": "130.0.6723.170",
     "published": "2024-12-18",
-    "eol": null,
+    "eol": "2024-12-19T19:53:41.474260Z",
     "channel": "extended"
   }
 ]
