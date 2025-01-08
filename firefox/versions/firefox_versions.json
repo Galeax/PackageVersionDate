@@ -2422,11 +2422,16 @@
   {
     "version": "133.0",
     "published": "2024-11-26",
-    "eol": null
+    "eol": "2025-01-07"
   },
   {
     "version": "133.0.3",
     "published": "2024-12-10",
+    "eol": "2025-01-07"
+  },
+  {
+    "version": "134.0",
+    "published": "2025-01-07",
     "eol": null
   }
 ]
