@@ -3594,6 +3594,12 @@
     "channel": "extended"
   },
   {
+    "version": "131.0.6778.265",
+    "published": "2025-01-07",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
     "version": "131.0.6778.206",
     "published": "2025-01-07",
     "eol": "2025-01-08T19:27:31.216008Z",
@@ -3606,15 +3612,9 @@
     "channel": "stable"
   },
   {
-    "version": "131.0.6778.265",
-    "published": "2025-01-07",
-    "eol": null,
-    "channel": "stable"
-  },
-  {
     "version": "130.0.6723.191",
     "published": "2025-01-07",
-    "eol": null,
+    "eol": "2025-01-09T21:41:32.992601Z",
     "channel": "extended"
   },
   {
