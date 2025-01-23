@@ -3632,6 +3632,24 @@
   {
     "version": "132.0.6834.84",
     "published": "2025-01-14",
+    "eol": "2025-01-22T18:10:05.619798Z",
+    "channel": "stable"
+  },
+  {
+    "version": "131.0.6778.267",
+    "published": "2025-01-22",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "132.0.6834.110",
+    "published": "2025-01-22",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "132.0.6834.111",
+    "published": "2025-01-22",
     "eol": null,
     "channel": "stable"
   }
