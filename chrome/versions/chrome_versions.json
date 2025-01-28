@@ -3636,21 +3636,21 @@
     "channel": "stable"
   },
   {
-    "version": "131.0.6778.267",
+    "version": "132.0.6834.111",
     "published": "2025-01-22",
     "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "131.0.6778.267",
+    "published": "2025-01-22",
+    "eol": "2025-01-27T20:55:34.852045Z",
     "channel": "stable"
   },
   {
     "version": "132.0.6834.110",
     "published": "2025-01-22",
-    "eol": null,
-    "channel": "stable"
-  },
-  {
-    "version": "132.0.6834.111",
-    "published": "2025-01-22",
-    "eol": null,
+    "eol": "2025-01-27T20:55:34.852045Z",
     "channel": "stable"
   }
 ]
