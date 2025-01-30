@@ -3656,18 +3656,30 @@
   {
     "version": "132.0.6834.112",
     "published": "2025-01-28",
-    "eol": null,
+    "eol": "2025-01-29T20:53:18.537470Z",
     "channel": "stable"
   },
   {
     "version": "132.0.6834.159",
     "published": "2025-01-28",
-    "eol": null,
+    "eol": "2025-01-29T20:53:18.537470Z",
     "channel": "stable"
   },
   {
     "version": "132.0.6834.160",
     "published": "2025-01-28",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "132.0.6834.161",
+    "published": "2025-01-29",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "133.0.6943.35",
+    "published": "2025-01-29",
     "eol": null,
     "channel": "stable"
   }
