@@ -3710,19 +3710,43 @@
   {
     "version": "132.0.6834.196",
     "published": "2025-02-06",
-    "eol": null,
+    "eol": "2025-02-12T18:27:13.172115Z",
     "channel": "stable"
   },
   {
     "version": "133.0.6943.59",
     "published": "2025-02-06",
-    "eol": null,
+    "eol": "2025-02-12T18:27:13.172115Z",
     "channel": "stable"
   },
   {
     "version": "133.0.6943.60",
     "published": "2025-02-06",
+    "eol": "2025-02-12T18:27:13.172115Z",
+    "channel": "stable"
+  },
+  {
+    "version": "132.0.6834.197",
+    "published": "2025-02-12",
     "eol": null,
     "channel": "stable"
+  },
+  {
+    "version": "133.0.6943.98",
+    "published": "2025-02-12",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "133.0.6943.99",
+    "published": "2025-02-12",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "132.0.6834.207",
+    "published": "2025-02-12",
+    "eol": null,
+    "channel": "extended"
   }
 ]
