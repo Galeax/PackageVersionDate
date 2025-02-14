@@ -3728,13 +3728,13 @@
   {
     "version": "132.0.6834.197",
     "published": "2025-02-12",
-    "eol": null,
+    "eol": "2025-02-13T20:20:00Z",
     "channel": "stable"
   },
   {
     "version": "133.0.6943.98",
     "published": "2025-02-12",
-    "eol": null,
+    "eol": "2025-02-13T20:20:00Z",
     "channel": "stable"
   },
   {
