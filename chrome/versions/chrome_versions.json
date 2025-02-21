@@ -3750,27 +3750,27 @@
     "channel": "extended"
   },
   {
-    "version": "133.0.6943.100",
-    "published": "2025-02-18",
-    "eol": null,
-    "channel": "stable"
-  },
-  {
-    "version": "133.0.6943.126",
-    "published": "2025-02-18",
-    "eol": null,
-    "channel": "stable"
-  },
-  {
     "version": "133.0.6943.127",
     "published": "2025-02-18",
     "eol": null,
     "channel": "stable"
   },
   {
+    "version": "133.0.6943.100",
+    "published": "2025-02-18",
+    "eol": "2025-02-20T20:54:02.764100Z",
+    "channel": "stable"
+  },
+  {
+    "version": "133.0.6943.126",
+    "published": "2025-02-18",
+    "eol": "2025-02-20T20:54:02.764100Z",
+    "channel": "stable"
+  },
+  {
     "version": "132.0.6834.209",
     "published": "2025-02-18",
-    "eol": null,
+    "eol": "2025-02-20T21:10:22.213024Z",
     "channel": "extended"
   }
 ]
