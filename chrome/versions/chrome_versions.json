@@ -3752,7 +3752,7 @@
   {
     "version": "133.0.6943.127",
     "published": "2025-02-18",
-    "eol": null,
+    "eol": "2025-02-25T18:50:34.765661Z",
     "channel": "stable"
   },
   {
@@ -3772,5 +3772,29 @@
     "published": "2025-02-18",
     "eol": "2025-02-20T21:10:22.213024Z",
     "channel": "extended"
+  },
+  {
+    "version": "132.0.6834.210",
+    "published": "2025-02-25",
+    "eol": null,
+    "channel": "extended"
+  },
+  {
+    "version": "133.0.6943.128",
+    "published": "2025-02-25",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "133.0.6943.141",
+    "published": "2025-02-25",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "133.0.6943.142",
+    "published": "2025-02-25",
+    "eol": null,
+    "channel": "stable"
   }
 ]
