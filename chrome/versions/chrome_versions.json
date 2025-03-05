@@ -3782,7 +3782,7 @@
   {
     "version": "133.0.6943.142",
     "published": "2025-02-25",
-    "eol": null,
+    "eol": "2025-03-04T20:54:28.133779Z",
     "channel": "stable"
   },
   {
@@ -3800,12 +3800,18 @@
   {
     "version": "133.0.6943.143",
     "published": "2025-02-26",
-    "eol": null,
+    "eol": "2025-03-04T20:54:28.133779Z",
     "channel": "stable"
   },
   {
     "version": "134.0.6998.35",
     "published": "2025-02-26",
+    "eol": "2025-03-04T20:54:28.133779Z",
+    "channel": "stable"
+  },
+  {
+    "version": "134.0.6998.36",
+    "published": "2025-03-04",
     "eol": null,
     "channel": "stable"
   }

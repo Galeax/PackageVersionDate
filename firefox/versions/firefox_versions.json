@@ -2447,11 +2447,16 @@
   {
     "version": "135.0",
     "published": "2025-02-04",
-    "eol": null
+    "eol": "2025-03-04"
   },
   {
     "version": "135.0.1",
     "published": "2025-02-18",
+    "eol": "2025-03-04"
+  },
+  {
+    "version": "136.0",
+    "published": "2025-03-04",
     "eol": null
   }
 ]
