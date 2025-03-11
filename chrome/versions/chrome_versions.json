@@ -3812,6 +3812,24 @@
   {
     "version": "134.0.6998.36",
     "published": "2025-03-04",
+    "eol": "2025-03-10T19:59:36.653895Z",
+    "channel": "stable"
+  },
+  {
+    "version": "134.0.6998.37",
+    "published": "2025-03-10",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "134.0.6998.88",
+    "published": "2025-03-10",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "134.0.6998.89",
+    "published": "2025-03-10",
     "eol": null,
     "channel": "stable"
   }
