@@ -3818,7 +3818,7 @@
   {
     "version": "134.0.6998.89",
     "published": "2025-03-10",
-    "eol": null,
+    "eol": "2025-03-19T18:04:04.320275Z",
     "channel": "stable"
   },
   {
@@ -3831,6 +3831,24 @@
     "version": "134.0.6998.88",
     "published": "2025-03-10",
     "eol": "2025-03-12T19:48:08.489292Z",
+    "channel": "stable"
+  },
+  {
+    "version": "134.0.6998.117",
+    "published": "2025-03-19",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "134.0.6998.118",
+    "published": "2025-03-19",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "134.0.6998.90",
+    "published": "2025-03-19",
+    "eol": null,
     "channel": "stable"
   }
 ]
