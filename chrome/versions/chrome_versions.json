@@ -3870,6 +3870,12 @@
     "channel": "stable"
   },
   {
+    "version": "134.0.6998.178",
+    "published": "2025-03-25",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
     "version": "134.0.6998.167",
     "published": "2025-03-25",
     "eol": "2025-03-26T21:23:54.151071Z",
@@ -3879,12 +3885,6 @@
     "version": "134.0.6998.177",
     "published": "2025-03-25",
     "eol": "2025-03-26T21:23:54.151071Z",
-    "channel": "stable"
-  },
-  {
-    "version": "134.0.6998.178",
-    "published": "2025-03-25",
-    "eol": null,
     "channel": "stable"
   },
   {
