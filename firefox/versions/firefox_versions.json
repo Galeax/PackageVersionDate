@@ -2483,5 +2483,10 @@
     "version": "137.0",
     "published": "2025-04-01",
     "eol": null
+  },
+  {
+    "version": "137.0.1",
+    "published": "2025-04-08",
+    "eol": null
   }
 ]
