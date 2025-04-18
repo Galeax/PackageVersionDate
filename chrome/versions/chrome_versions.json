@@ -3930,27 +3930,27 @@
     "channel": "extended"
   },
   {
-    "version": "135.0.7049.86",
-    "published": "2025-04-15",
-    "eol": null,
-    "channel": "stable"
-  },
-  {
-    "version": "135.0.7049.95",
-    "published": "2025-04-15",
-    "eol": null,
-    "channel": "stable"
-  },
-  {
     "version": "135.0.7049.96",
     "published": "2025-04-15",
     "eol": null,
     "channel": "stable"
   },
   {
+    "version": "135.0.7049.86",
+    "published": "2025-04-15",
+    "eol": "2025-04-17T22:06:05.763771Z",
+    "channel": "stable"
+  },
+  {
+    "version": "135.0.7049.95",
+    "published": "2025-04-15",
+    "eol": "2025-04-17T22:06:05.763771Z",
+    "channel": "stable"
+  },
+  {
     "version": "134.0.6998.205",
     "published": "2025-04-15",
-    "eol": null,
+    "eol": "2025-04-17T20:27:32.252456Z",
     "channel": "extended"
   }
 ]
