@@ -3954,6 +3954,12 @@
     "channel": "extended"
   },
   {
+    "version": "135.0.7049.115",
+    "published": "2025-04-22",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
     "version": "135.0.7049.114",
     "published": "2025-04-22",
     "eol": "2025-04-23T19:12:25.675875Z",
@@ -3963,12 +3969,6 @@
     "version": "135.0.7049.97",
     "published": "2025-04-22",
     "eol": "2025-04-23T19:12:25.675875Z",
-    "channel": "stable"
-  },
-  {
-    "version": "135.0.7049.115",
-    "published": "2025-04-22",
-    "eol": null,
     "channel": "stable"
   },
   {
