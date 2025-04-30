@@ -3956,7 +3956,7 @@
   {
     "version": "135.0.7049.115",
     "published": "2025-04-22",
-    "eol": null,
+    "eol": "2025-04-29T18:21:20.248099Z",
     "channel": "stable"
   },
   {
@@ -3974,12 +3974,18 @@
   {
     "version": "135.0.7049.116",
     "published": "2025-04-23",
-    "eol": null,
+    "eol": "2025-04-29T18:21:20.248099Z",
     "channel": "stable"
   },
   {
     "version": "136.0.7103.48",
     "published": "2025-04-23",
+    "eol": "2025-04-29T18:21:20.248099Z",
+    "channel": "stable"
+  },
+  {
+    "version": "136.0.7103.49",
+    "published": "2025-04-29",
     "eol": null,
     "channel": "stable"
   }
