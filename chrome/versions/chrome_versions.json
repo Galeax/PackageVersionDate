@@ -3986,6 +3986,24 @@
   {
     "version": "136.0.7103.49",
     "published": "2025-04-29",
+    "eol": "2025-05-06T17:50:46.597435Z",
+    "channel": "stable"
+  },
+  {
+    "version": "135.0.7049.117",
+    "published": "2025-05-06",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "136.0.7103.92",
+    "published": "2025-05-06",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "136.0.7103.93",
+    "published": "2025-05-06",
     "eol": null,
     "channel": "stable"
   }
