@@ -3990,21 +3990,21 @@
     "channel": "stable"
   },
   {
+    "version": "136.0.7103.93",
+    "published": "2025-05-06",
+    "eol": "2025-05-08T19:27:07.042635Z",
+    "channel": "stable"
+  },
+  {
     "version": "135.0.7049.117",
     "published": "2025-05-06",
-    "eol": null,
+    "eol": "2025-05-08T19:27:07.042635Z",
     "channel": "stable"
   },
   {
     "version": "136.0.7103.92",
     "published": "2025-05-06",
-    "eol": null,
-    "channel": "stable"
-  },
-  {
-    "version": "136.0.7103.93",
-    "published": "2025-05-06",
-    "eol": null,
+    "eol": "2025-05-08T19:27:07.042635Z",
     "channel": "stable"
   }
 ]
