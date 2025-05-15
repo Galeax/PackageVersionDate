@@ -4006,5 +4006,23 @@
     "published": "2025-05-06",
     "eol": "2025-05-08T19:27:07.042635Z",
     "channel": "stable"
+  },
+  {
+    "version": "136.0.7103.113",
+    "published": "2025-05-14",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "136.0.7103.114",
+    "published": "2025-05-14",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "136.0.7103.94",
+    "published": "2025-05-14",
+    "eol": null,
+    "channel": "stable"
   }
 ]
