@@ -2508,5 +2508,10 @@
     "version": "138.0.3",
     "published": "2025-05-13",
     "eol": null
+  },
+  {
+    "version": "138.0.4",
+    "published": "2025-05-17",
+    "eol": null
   }
 ]
