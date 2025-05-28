@@ -4034,12 +4034,30 @@
   {
     "version": "137.0.7151.40",
     "published": "2025-05-21",
-    "eol": null,
+    "eol": "2025-05-27T17:17:36.489445Z",
     "channel": "stable"
   },
   {
     "version": "137.0.7151.41",
     "published": "2025-05-21",
+    "eol": "2025-05-27T17:17:36.489445Z",
+    "channel": "stable"
+  },
+  {
+    "version": "136.0.7103.116",
+    "published": "2025-05-27",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "137.0.7151.55",
+    "published": "2025-05-27",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "137.0.7151.56",
+    "published": "2025-05-27",
     "eol": null,
     "channel": "stable"
   }
