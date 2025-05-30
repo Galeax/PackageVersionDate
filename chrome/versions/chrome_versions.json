@@ -4046,13 +4046,13 @@
   {
     "version": "136.0.7103.116",
     "published": "2025-05-27",
-    "eol": null,
+    "eol": "2025-05-29T21:39:57.649030Z",
     "channel": "stable"
   },
   {
     "version": "137.0.7151.55",
     "published": "2025-05-27",
-    "eol": null,
+    "eol": "2025-05-29T21:39:57.649030Z",
     "channel": "stable"
   },
   {
@@ -4064,7 +4064,7 @@
   {
     "version": "136.0.7103.149",
     "published": "2025-05-28",
-    "eol": null,
+    "eol": "2025-05-29T20:43:56.923067Z",
     "channel": "extended"
   }
 ]
