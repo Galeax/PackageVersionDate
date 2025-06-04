@@ -4084,5 +4084,11 @@
     "published": "2025-06-02",
     "eol": null,
     "channel": "stable"
+  },
+  {
+    "version": "136.0.7103.156",
+    "published": "2025-06-03",
+    "eol": null,
+    "channel": "extended"
   }
 ]
