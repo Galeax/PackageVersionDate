@@ -4068,21 +4068,21 @@
     "channel": "extended"
   },
   {
-    "version": "137.0.7151.57",
+    "version": "137.0.7151.69",
     "published": "2025-06-02",
     "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "137.0.7151.57",
+    "published": "2025-06-02",
+    "eol": "2025-06-05T23:23:38.438582Z",
     "channel": "stable"
   },
   {
     "version": "137.0.7151.68",
     "published": "2025-06-02",
-    "eol": null,
-    "channel": "stable"
-  },
-  {
-    "version": "137.0.7151.69",
-    "published": "2025-06-02",
-    "eol": null,
+    "eol": "2025-06-05T23:23:38.438582Z",
     "channel": "stable"
   },
   {
