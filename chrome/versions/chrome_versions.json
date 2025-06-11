@@ -4070,7 +4070,7 @@
   {
     "version": "137.0.7151.69",
     "published": "2025-06-02",
-    "eol": null,
+    "eol": "2025-06-10T17:58:08.177075Z",
     "channel": "stable"
   },
   {
@@ -4089,6 +4089,30 @@
     "version": "136.0.7103.156",
     "published": "2025-06-03",
     "eol": "2025-06-04T21:06:31.776433Z",
+    "channel": "extended"
+  },
+  {
+    "version": "137.0.7151.103",
+    "published": "2025-06-10",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "137.0.7151.104",
+    "published": "2025-06-10",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "137.0.7151.70",
+    "published": "2025-06-10",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "136.0.7103.168",
+    "published": "2025-06-10",
+    "eol": null,
     "channel": "extended"
   }
 ]
