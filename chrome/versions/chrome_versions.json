@@ -4116,6 +4116,12 @@
     "channel": "extended"
   },
   {
+    "version": "137.0.7151.120",
+    "published": "2025-06-17",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
     "version": "137.0.7151.105",
     "published": "2025-06-17",
     "eol": "2025-06-18T16:48:06.588473Z",
@@ -4125,12 +4131,6 @@
     "version": "137.0.7151.119",
     "published": "2025-06-17",
     "eol": "2025-06-18T16:48:06.588473Z",
-    "channel": "stable"
-  },
-  {
-    "version": "137.0.7151.120",
-    "published": "2025-06-17",
-    "eol": null,
     "channel": "stable"
   },
   {
