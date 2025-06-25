@@ -2517,16 +2517,21 @@
   {
     "version": "139.0",
     "published": "2025-05-27",
-    "eol": null
+    "eol": "2025-06-24"
   },
   {
     "version": "139.0.1",
     "published": "2025-05-29",
-    "eol": null
+    "eol": "2025-06-24"
   },
   {
     "version": "139.0.4",
     "published": "2025-06-10",
+    "eol": "2025-06-24"
+  },
+  {
+    "version": "140.0",
+    "published": "2025-06-24",
     "eol": null
   }
 ]
