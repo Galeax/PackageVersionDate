@@ -2533,5 +2533,10 @@
     "version": "140.0",
     "published": "2025-06-24",
     "eol": null
+  },
+  {
+    "version": "140.0.1",
+    "published": "2025-06-26",
+    "eol": null
   }
 ]
