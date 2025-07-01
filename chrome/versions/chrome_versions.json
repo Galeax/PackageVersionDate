@@ -4166,6 +4166,24 @@
   {
     "version": "138.0.7204.50",
     "published": "2025-06-24",
+    "eol": "2025-06-30T20:52:42.505327Z",
+    "channel": "stable"
+  },
+  {
+    "version": "138.0.7204.51",
+    "published": "2025-06-30",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "138.0.7204.96",
+    "published": "2025-06-30",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "138.0.7204.97",
+    "published": "2025-06-30",
     "eol": null,
     "channel": "stable"
   }
