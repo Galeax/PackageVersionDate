@@ -4206,21 +4206,21 @@
     "channel": "stable"
   },
   {
-    "version": "138.0.7204.102",
+    "version": "138.0.7204.158",
     "published": "2025-07-15",
     "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "138.0.7204.102",
+    "published": "2025-07-15",
+    "eol": "2025-07-17T20:48:55.768846Z",
     "channel": "stable"
   },
   {
     "version": "138.0.7204.157",
     "published": "2025-07-15",
-    "eol": null,
-    "channel": "stable"
-  },
-  {
-    "version": "138.0.7204.158",
-    "published": "2025-07-15",
-    "eol": null,
+    "eol": "2025-07-17T20:48:55.768846Z",
     "channel": "stable"
   }
 ]
