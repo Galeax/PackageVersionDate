@@ -4240,5 +4240,23 @@
     "published": "2025-07-22",
     "eol": "2025-07-23T18:38:00Z",
     "channel": "stable"
+  },
+  {
+    "version": "138.0.7204.170",
+    "published": "2025-07-29",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "138.0.7204.183",
+    "published": "2025-07-29",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
+    "version": "138.0.7204.184",
+    "published": "2025-07-29",
+    "eol": null,
+    "channel": "stable"
   }
 ]
