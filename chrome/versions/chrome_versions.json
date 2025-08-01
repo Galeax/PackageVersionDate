@@ -4242,6 +4242,12 @@
     "channel": "stable"
   },
   {
+    "version": "138.0.7204.184",
+    "published": "2025-07-29",
+    "eol": null,
+    "channel": "stable"
+  },
+  {
     "version": "138.0.7204.170",
     "published": "2025-07-29",
     "eol": "2025-07-30T17:51:47.035063Z",
@@ -4251,12 +4257,6 @@
     "version": "138.0.7204.183",
     "published": "2025-07-29",
     "eol": "2025-07-30T17:51:47.035063Z",
-    "channel": "stable"
-  },
-  {
-    "version": "138.0.7204.184",
-    "published": "2025-07-29",
-    "eol": null,
     "channel": "stable"
   },
   {
