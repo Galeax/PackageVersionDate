@@ -3,6 +3,13 @@
     "end_of_servicing": false,
     "updates": [
         {
+            "date": "2025-08-12",
+            "build": "26100.4946",
+            "KB": "KB5063878",
+            "eol": "2025-09-09",
+            "is_preview": false
+        },
+        {
             "date": "2025-07-22",
             "build": "26100.4770",
             "KB": "KB5062660",
