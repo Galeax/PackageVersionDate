@@ -2552,16 +2552,21 @@
   {
     "version": "141.0",
     "published": "2025-07-22",
-    "eol": null
+    "eol": "2025-08-19"
   },
   {
     "version": "141.0.2",
     "published": "2025-08-05",
-    "eol": null
+    "eol": "2025-08-19"
   },
   {
     "version": "141.0.3",
     "published": "2025-08-07",
+    "eol": "2025-08-19"
+  },
+  {
+    "version": "142.0",
+    "published": "2025-08-19",
     "eol": null
   }
 ]
