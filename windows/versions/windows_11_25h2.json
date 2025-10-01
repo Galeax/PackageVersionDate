@@ -1,0 +1,13 @@
+{
+    "version": "25h2",
+    "end_of_servicing": false,
+    "updates": [
+        {
+            "date": "2025-09-30",
+            "build": "26200.6584",
+            "KB": "",
+            "eol": "2025-10-14",
+            "is_preview": true
+        }
+    ]
+}
