@@ -1,6 +1,6 @@
 {
     "version": "22h2",
-    "end_of_servicing": false,
+    "end_of_servicing": true,
     "updates": [
         {
             "date": "2025-10-14",
