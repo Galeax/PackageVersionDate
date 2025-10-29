@@ -2598,5 +2598,10 @@
     "version": "144.0",
     "published": "2025-10-14",
     "eol": null
+  },
+  {
+    "version": "144.0.2",
+    "published": "2025-10-28",
+    "eol": null
   }
 ]
