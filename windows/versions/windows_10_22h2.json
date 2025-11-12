@@ -3,6 +3,20 @@
     "end_of_servicing": false,
     "updates": [
         {
+            "date": "2025-11-11",
+            "build": "19045.6575",
+            "KB": "KB5068781",
+            "eol": "2025-12-09",
+            "is_preview": false
+        },
+        {
+            "date": "2025-11-11",
+            "build": "19045.6466",
+            "KB": "KB5071959",
+            "eol": "2025-12-09",
+            "is_preview": false
+        },
+        {
             "date": "2025-10-14",
             "build": "19045.6456",
             "KB": "KB5066791",

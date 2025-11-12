@@ -2597,11 +2597,16 @@
   {
     "version": "144.0",
     "published": "2025-10-14",
-    "eol": null
+    "eol": "2025-11-11"
   },
   {
     "version": "144.0.2",
     "published": "2025-10-28",
+    "eol": "2025-11-11"
+  },
+  {
+    "version": "145.0",
+    "published": "2025-11-11",
     "eol": null
   }
 ]
