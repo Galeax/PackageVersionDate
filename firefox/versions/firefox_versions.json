@@ -2613,5 +2613,10 @@
     "version": "145.0.1",
     "published": "2025-11-18",
     "eol": null
+  },
+  {
+    "version": "145.0.2",
+    "published": "2025-11-25",
+    "eol": null
   }
 ]
