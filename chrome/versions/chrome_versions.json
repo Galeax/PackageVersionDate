@@ -4628,7 +4628,7 @@
   {
     "version": "142.0.7444.176",
     "published": "2025-11-17",
-    "eol": null,
+    "eol": "2025-12-02T18:16:59.609293Z",
     "channel": "stable"
   },
   {
@@ -4646,13 +4646,25 @@
   {
     "version": "142.0.7444.177",
     "published": "2025-11-20",
-    "eol": null,
+    "eol": "2025-12-02T18:16:59.609293Z",
     "channel": "stable"
   },
   {
     "version": "143.0.7499.40",
     "published": "2025-11-20",
+    "eol": "2025-12-02T18:16:59.609293Z",
+    "channel": "stable"
+  },
+  {
+    "version": "143.0.7499.41",
+    "published": "2025-12-02",
     "eol": null,
     "channel": "stable"
+  },
+  {
+    "version": "142.0.7444.226",
+    "published": "2025-12-02",
+    "eol": null,
+    "channel": "extended"
   }
 ]
