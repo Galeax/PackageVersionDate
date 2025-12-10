@@ -2607,16 +2607,21 @@
   {
     "version": "145.0",
     "published": "2025-11-11",
-    "eol": null
+    "eol": "2025-12-09"
   },
   {
     "version": "145.0.1",
     "published": "2025-11-18",
-    "eol": null
+    "eol": "2025-12-09"
   },
   {
     "version": "145.0.2",
     "published": "2025-11-25",
+    "eol": "2025-12-09"
+  },
+  {
+    "version": "146.0",
+    "published": "2025-12-09",
     "eol": null
   }
 ]
