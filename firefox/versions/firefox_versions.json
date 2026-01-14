@@ -2622,11 +2622,16 @@
   {
     "version": "146.0",
     "published": "2025-12-09",
-    "eol": null
+    "eol": "2026-01-13"
   },
   {
     "version": "146.0.1",
     "published": "2025-12-18",
+    "eol": "2026-01-13"
+  },
+  {
+    "version": "147.0",
+    "published": "2026-01-13",
     "eol": null
   }
 ]
