@@ -1,6 +1,6 @@
 {
     "version": "2004",
-    "end_of_servicing": true,
+    "end_of_servicing": false,
     "updates": [
         {
             "date": "2021-12-14",

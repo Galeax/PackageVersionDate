@@ -1,6 +1,6 @@
 {
     "version": "1909",
-    "end_of_servicing": true,
+    "end_of_servicing": false,
     "updates": [
         {
             "date": "2022-05-10",
