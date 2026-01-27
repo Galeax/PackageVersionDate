@@ -3,6 +3,13 @@
     "end_of_servicing": false,
     "updates": [
         {
+            "date": "2026-01-24",
+            "build": "19044.6812",
+            "KB": "KB5078129",
+            "eol": "2026-02-10",
+            "is_preview": true
+        },
+        {
             "date": "2026-01-17",
             "build": "19044.6811",
             "KB": "KB5077796",
