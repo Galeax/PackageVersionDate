@@ -2632,26 +2632,31 @@
   {
     "version": "147.0",
     "published": "2026-01-13",
-    "eol": null
+    "eol": "2026-02-24"
   },
   {
     "version": "147.0.1",
     "published": "2026-01-16",
-    "eol": null
+    "eol": "2026-02-24"
   },
   {
     "version": "147.0.2",
     "published": "2026-01-27",
-    "eol": null
+    "eol": "2026-02-24"
   },
   {
     "version": "147.0.3",
     "published": "2026-02-04",
-    "eol": null
+    "eol": "2026-02-24"
   },
   {
     "version": "147.0.4",
     "published": "2026-02-16",
+    "eol": "2026-02-24"
+  },
+  {
+    "version": "148.0",
+    "published": "2026-02-24",
     "eol": null
   }
 ]
