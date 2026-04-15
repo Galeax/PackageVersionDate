@@ -3,6 +3,13 @@
     "end_of_servicing": false,
     "updates": [
         {
+            "date": "2026-04-14",
+            "build": "26100.32690",
+            "KB": "KB5082063",
+            "eol": "2026-05-12",
+            "is_preview": false
+        },
+        {
             "date": "2026-03-10",
             "build": "26100.32522",
             "KB": "KB5078740",
