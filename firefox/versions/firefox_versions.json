@@ -2748,5 +2748,10 @@
     "version": "152.0.5",
     "published": "2026-07-07",
     "eol": null
+  },
+  {
+    "version": "152.0.6",
+    "published": "2026-07-14",
+    "eol": null
   }
 ]
