@@ -2722,36 +2722,41 @@
   {
     "version": "152.0",
     "published": "2026-06-16",
-    "eol": null
+    "eol": "2026-07-21"
   },
   {
     "version": "152.0.1",
     "published": "2026-06-18",
-    "eol": null
+    "eol": "2026-07-21"
   },
   {
     "version": "152.0.2",
     "published": "2026-06-23",
-    "eol": null
+    "eol": "2026-07-21"
   },
   {
     "version": "152.0.3",
     "published": "2026-06-25",
-    "eol": null
+    "eol": "2026-07-21"
   },
   {
     "version": "152.0.4",
     "published": "2026-06-30",
-    "eol": null
+    "eol": "2026-07-21"
   },
   {
     "version": "152.0.5",
     "published": "2026-07-07",
-    "eol": null
+    "eol": "2026-07-21"
   },
   {
     "version": "152.0.6",
     "published": "2026-07-14",
+    "eol": "2026-07-21"
+  },
+  {
+    "version": "153.0",
+    "published": "2026-07-21",
     "eol": null
   }
 ]
