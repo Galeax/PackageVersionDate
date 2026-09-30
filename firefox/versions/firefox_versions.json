@@ -2797,11 +2797,16 @@
   {
     "version": "156.0",
     "published": "2026-09-15",
-    "eol": null
+    "eol": "2026-09-29"
   },
   {
     "version": "156.0.1",
     "published": "2026-09-22",
+    "eol": "2026-09-29"
+  },
+  {
+    "version": "157.0",
+    "published": "2026-09-29",
     "eol": null
   }
 ]
