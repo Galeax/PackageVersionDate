@@ -2808,5 +2808,10 @@
     "version": "157.0",
     "published": "2026-09-29",
     "eol": null
+  },
+  {
+    "version": "157.0.1",
+    "published": "2026-10-06",
+    "eol": null
   }
 ]
